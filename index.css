@@ -1,11 +1,11 @@
 body {
-  background-color: #1f1c25;
+  background-color: #1e4c25;
   color: #f0e6d1;
   font-family: "MesloLGS Nerd Font", "Georgia", serif;
   line-height: 1.7;
   margin: 0;
   padding: 20px;
-  max-width: 800px;
+  max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
