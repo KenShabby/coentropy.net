@@ -1,13 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #1e4c25;
   color: #f0e6d1;
-  font-family: "MesloLGS Nerd Font", "Georgia", serif;
+  font-family: "Roboto", "Georgia", serif;
   line-height: 1.7;
   margin: 0;
   padding: 20px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
 b {
@@ -55,11 +60,6 @@ a:hover {
   border-color: #f4a261;
 }
 
-ul,
-ol {
-  padding-left: 30px;
-}
-
 code {
   background-color: #3c3c42;
   border-radius: 6px;
@@ -100,31 +100,41 @@ img {
   box-shadow: 3px 3px 6px #000;
 }
 
-::-webkit-scrollbar {
-  width: 12px;
-  height: 12px;
+li {
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
 }
 
-::-webkit-scrollbar-track {
-  background: #1f1c25;
-  border-radius: 6px;
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #3c3c42;
-  border-radius: 6px;
-  border: 3px solid #1f1c25;
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background-color: #5a5466;
+nav {
+  position: sticky;
+  top: 0;
 }
 
-* {
-  scrollbar-width: thin;
-  scrollbar-color: #3c3c42 #1f1c25;
+nav ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-::-webkit-scrollbar-corner {
-  background: #1f1c25;
+nav li {
+  display: inline-block;
 }
