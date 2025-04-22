@@ -3,12 +3,12 @@ html {
 }
 
 @font-face {
-    font-family: 'MesloLGS Nerd Font Mono';
-    src: url('MesloLGSNFM-Regular.woff2') format('woff2'),
-        url('MesloLGSNFM-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'MesloLGS Nerd Font Mono';
+  src: url('MesloLGSNFM-Regular.woff2') format('woff2'),
+    url('MesloLGSNFM-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 body {
@@ -21,7 +21,7 @@ body {
   font-weight: 400;
   line-height: 1.7;
   margin: 0;
-  padding: 20px;
+  padding: 0px;
   max-width: 65%;
   margin-left: auto;
   margin-right: auto;
@@ -30,18 +30,6 @@ body {
 
 b {
   font-weight: 900;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #87ff87;
-  margin-top: 24px;
-  margin-bottom: 16px;
-  text-shadow: 2px 2px 4px #000;
 }
 
 h1 {
@@ -55,20 +43,27 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  color: limegreen;
 }
 
 h4,
 h5,
 h6 {
+  color: limegreen;
   font-size: 1.2em;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  text-shadow: 2px 2px 4px #000;
 }
 
 p {
   font-size: 18px;
+  text-align: justify;
 }
 
 a {
-  color: #e0a96d;
+  color: limegreen;
+  /* color: #e0a96d; */
   text-decoration: none;
 }
 
@@ -117,7 +112,7 @@ img {
   box-shadow: 3px 3px 6px #000;
 }
 
-li {
+nav li {
   border-right: 1px solid #bbb;
   border-left: 1px solid #bbb;
 }
@@ -129,7 +124,6 @@ li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
@@ -153,6 +147,11 @@ nav ul {
 
 nav li {
   float: left;
+}
+
+ul {
+  border: none;
+
 }
 
 footer p {
