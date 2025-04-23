@@ -57,19 +57,29 @@ h6 {
 }
 
 p {
-  font-size: 18px;
+  font-size: 18;
   text-align: justify;
+  margin: 1rem auto;
 }
 
 a {
   color: limegreen;
-  /* color: #e0a96d; */
   text-decoration: none;
 }
 
 a:hover {
   color: #f4a261;
   border-color: #f4a261;
+}
+
+a.apt-button {
+  background-color: limegreen;
+  color: white;
+  border: 2px solid #ffd7af;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 code {
