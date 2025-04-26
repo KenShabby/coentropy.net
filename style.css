@@ -13,19 +13,18 @@ html {
 
 body {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('./images/board2.jpg');
+  background-position: center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  min-height: 100vh;
+  background-attachment: fixed;
   color: #ffd7af;
   font-family: "MesloLGS Nerd Font Mono", "Garamond", serif;
-  font-weight: 400;
   line-height: 1.7;
-  margin: 0;
-  padding: 0px;
-  max-width: 65%;
   margin-left: auto;
   margin-right: auto;
-  box-sizing: border-box;
+  max-width: 65%;
+  min-height: 100vh;
+  padding: 0px;
 }
 
 b {
@@ -35,15 +34,20 @@ b {
 h1 {
   font-size: 2.5em;
   text-decoration: none;
+  color: limegreen;
+  margin: 0em;
 }
 
 h2 {
   font-size: 2em;
+  color: limegreen;
 }
 
 h3 {
   font-size: 1.5em;
   color: limegreen;
+  margin-top: 0em;
+  margin-bottom: 1em;
 }
 
 h4,
@@ -51,7 +55,7 @@ h5,
 h6 {
   color: limegreen;
   font-size: 1.2em;
-  margin-top: 24px;
+  margin-top: 14px;
   margin-bottom: 16px;
   text-shadow: 2px 2px 4px #000;
 }
@@ -117,9 +121,6 @@ blockquote {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 6px;
-  border: 3px solid #3c3c42;
-  box-shadow: 3px 3px 6px #000;
 }
 
 nav li {
