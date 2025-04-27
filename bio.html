@@ -5,10 +5,13 @@
   <meta charset="utf-8">
   <meta name="description" content="Brendan Coen's Bio">
   <link rel="stylesheet" href="index.css">
+  <script src="./components/header.js" type="text/javascript" defer></script>
+  <script src="./components/footer.js" type="text/javascript" defer></script>
   <title>Brendan Coen's Biography</title>
 </head>
 
 <body>
+  <header-component></header-component>
   <h1>Brendan Coen</h1>
   <div class="job-title">Meet the owner:</div>
   <p>
@@ -29,21 +32,22 @@
     Rotary Club, and served a 12 year term on the board of River to Coast
     Children's Services.
   </p>
+  <h2>Contact information</h2>
+  <ul>
+    <li>Email:
+      <a href="mailto:brendan@sonic.net">brendan@sonic.net</a>
+    </li>
+    <li>Web:
+      <a href="http://www.CoEntropy.net">http://example.com</a>
+    </li>
+    <li>Tel: (707) 486-2481</li>
+  </ul>
+  <footer-component></footer-component>
+  <center>
+    <script>
+      document.write("Last modified: " + document.lastModified);
+    </script>
+  </center>
 </body>
-<h2>Contact information</h2>
-<ul>
-  <li>Email:
-    <a href="mailto:brendan@sonic.net">brendan@sonic.net</a>
-  </li>
-  <li>Web:
-    <a href="http://www.CoEntropy.net">http://example.com</a>
-  </li>
-  <li>Tel: (707) 486-2481</li>
-</ul>
-<footer>
-  <script>
-    document.write("Last modified: " + document.lastModified);
-  </script>
-</footer>
 
 </html>
