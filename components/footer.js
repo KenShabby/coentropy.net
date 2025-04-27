@@ -7,6 +7,9 @@ class Footer extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
             <style>
+            footer p {
+                text-align: center;
+            }
             </style>
             <footer>
                 <hr>

@@ -17,6 +17,8 @@ body {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  box-sizing: border-box;
+  display: grid;
   color: #ffd7af;
   font-family: "MesloLGS Nerd Font Mono", "Garamond", serif;
   line-height: 1.7;
@@ -62,7 +64,7 @@ h6 {
 
 p {
   font-size: 18;
-  text-align: justify;
+  text-align: left;
   margin: 1rem auto;
 }
 
@@ -78,12 +80,13 @@ a:hover {
 
 a.apt-button {
   background-color: limegreen;
-  color: white;
   border: 2px solid #ffd7af;
-  padding: 14px 25px;
+  color: white;
+  display: inline-block;
+  margin: auto;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  padding: 14px 25px;
 }
 
 code {
@@ -92,6 +95,15 @@ code {
   color: #e9c46a;
   padding: 0.4em 0.6em;
   font-family: "Courier New", monospace;
+}
+
+div {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  width: 90%;
 }
 
 pre code {
@@ -165,7 +177,7 @@ ul {
 
 }
 
-footer p {
+footer {
   text-align: center;
   line-height: 0.8;
 }
