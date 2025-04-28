@@ -46,6 +46,7 @@ h2 {
 }
 
 h3 {
+  text-align: cente;
   font-size: 1.5em;
   color: limegreen;
   margin-top: 0em;
@@ -134,9 +135,8 @@ img {
   height: auto;
 }
 
-nav li {
-  border-right: 1px solid #bbb;
-  border-left: 1px solid #bbb;
+li {
+  list-style-type: none;
 }
 
 li a {
@@ -152,6 +152,7 @@ li a:hover {
 }
 
 nav {
+  margin: auto;
   display: flex;
   position: sticky;
   height: auto;
@@ -163,14 +164,19 @@ nav {
 
 nav ul {
   list-style-type: none;
-  margin: 0px;
+  margin: auto;
   background-color: #333;
-  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   top: 0;
 }
 
 nav li {
   float: left;
+  border-right: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
 ul {
