@@ -114,7 +114,6 @@ pre {
   background-color: #3c3c42;
   border-radius: 6px;
   padding: 1em;
-  overflow: auto;
   box-shadow: 2px 2px 6px #000;
 }
 
@@ -148,23 +147,25 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #111;
 }
 
 nav {
+  display: flex;
   position: sticky;
+  height: auto;
   top: 0;
+  justify-content: space-between;
+  width: auto;
+  z-index: 100;
 }
 
 nav ul {
   list-style-type: none;
   margin: 0px;
-  padding: 0px;
-  overflow: hidden;
   background-color: #333;
-  position: sticky;
+  padding: 0px;
   top: 0;
 }
 
@@ -174,10 +175,15 @@ nav li {
 
 ul {
   border: none;
-
 }
 
 footer {
   text-align: center;
   line-height: 0.8;
+}
+
+#Brendan_photo {
+  border: solid 5px limegreen;
+  float: right;
+  margin: 1em;
 }
