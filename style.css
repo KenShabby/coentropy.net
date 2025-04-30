@@ -201,8 +201,14 @@ footer {
 }
 
 span.flow {
-  float: none;
+  float: left;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
+}
+
+span.flow img {
+  display: flexbox;
+  align-self: center;
 }
