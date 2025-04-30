@@ -33,6 +33,12 @@ b {
   font-weight: 900;
 }
 
+form {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+}
+
 h1 {
   font-size: 2.5em;
   text-decoration: none;
@@ -192,4 +198,11 @@ footer {
   border: solid 5px limegreen;
   float: right;
   margin: 1em;
+}
+
+span.flow {
+  float: none;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
 }

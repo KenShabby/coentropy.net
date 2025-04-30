@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Computer
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Computer
     support, installation, configuration, and programming in Sonoma County.
     House-calls.">
-    <meta content="CoEntropy.net" property="og:title">
-    <meta name="author" content="Brendan Coen">
-    <meta property="og:type" content="website">
-    <meta name="robots" content="all">
-    <title>CoEntropy -
+  <meta content="CoEntropy.net" property="og:title">
+  <meta name="author" content="Brendan Coen">
+  <meta property="og:type" content="website">
+  <meta name="robots" content="all">
+  <title>CoEntropy -
     Computer Consulting for Sonoma County</title>
-    <link href="./style.css" rel="stylesheet">
-    <script src="./components/header.js" type="text/javascript" defer></script>
-    <script src="./components/footer.js" type="text/javascript" defer></script>
-  </head>
-  <body>
-    <header-component></header-component>
-    <main>
-      <p><a href="mailto:brendan@sonic.net>brendan@sonic.net">brendan@sonic.net</a></p>
-      <p>Phone: (707) 595-0805</p>
-    </main>
-    <footer-component></footer-component>
-  </body>
+  <link href="./style.css" rel="stylesheet">
+  <script src="./components/header.js" type="text/javascript" defer></script>
+  <script src="./components/footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <header-component></header-component>
+  <main>
+    <form target="_self" method="post" autocomplete="on">
+      <fieldset>
+        <legend>Contact us:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First" autofocus><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last"><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="email" required><br>
+        <label for="phone">Phone number (optional):</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="(###) ###-####"><br>
+        <label for="problem">Tell us a bit about your issue:</label><br>
+        <textarea name="problem" rows="15" cols="50" placeholder="Tales of woe"></textarea><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+  </main>
+  <footer-component></footer-component>
+</body>
+
 </html>
