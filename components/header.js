@@ -12,7 +12,7 @@ class Header extends HTMLElement {
                 </a></h1>
                 <h3>Computer Consulting and Support Services for Sonoma County</h3>
                 <nav>
-                    <ul>
+                    <ul class="nav-list">
                       <li><a href="index.html">Main</a></li>
                       <li><a href="services.html">Services</a></li>
                       <li><a href="pricing.html">Pricing</a></li>
