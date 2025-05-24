@@ -1,11 +1,5 @@
-class Footer extends HTMLElement {
-    constructor() {
-        super();
-    }
-
-
-    connectedCallback() {
-        this.innerHTML = `
+// footer.js
+const footerHTML = `
             <style>
             footer p {
                 text-align: center;
@@ -18,11 +12,14 @@ class Footer extends HTMLElement {
                 <p>(707) 595-0805</p>
                 <!-- privacy policy -->
                 <!-- social media links -->
-            <p>
-        </p>
-        </footer>
-        `;
-    }
+            </footer>
+`;
+
+const footerElement = document.querySelector('footer');
+
+function generateFooter() {
+    const html = footerHTML;
+    footerElement.innerHTML = html;
 }
 
-customElements.define('footer-component', Footer);
+generateFooter();
