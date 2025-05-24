@@ -26,7 +26,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    max-width: 65%;
+    max-width: clamp(65%, 85%, 95%);
     min-height: 100vh;
     padding: 0px;
 }
@@ -42,10 +42,9 @@ form {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 1.5em;
     text-decoration: none;
     color: limegreen;
-    margin: 0em;
 }
 
 h2 {
@@ -153,9 +152,10 @@ li:hover {
 }
 
 nav {
-    margin: auto;
     display: flex;
+    position: -webkit-sticky;
     position: sticky;
+    margin: auto;
     height: auto;
     top: 0;
     justify-content: space-between;
