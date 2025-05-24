@@ -4,6 +4,11 @@ const footerHTML = `
             footer p {
                 text-align: center;
             }
+
+            hr {
+                margin: 2rem;
+            }
+
             </style>
             <footer>
                 <hr>
@@ -13,7 +18,7 @@ const footerHTML = `
                 <!-- privacy policy -->
                 <!-- social media links -->
             </footer>
-`;
+            `;
 
 const footerElement = document.querySelector('footer');
 

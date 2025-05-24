@@ -1,11 +1,6 @@
-class Header extends HTMLElement {
-    constructor() {
-        super();
-    }
+// header.js
 
-
-    connectedCallback() {
-        this.innerHTML = `
+const navbarHTML = `
             <header>
                 <h1><a href="./index.html">
                     <img src="./images/CoEntropy-1-01.png" width=40% alt="CoEntropy logo">
@@ -24,7 +19,12 @@ class Header extends HTMLElement {
                 </nav>
             </header>
             `;
-    }
+
+const navbarElement = document.querySelector('header');
+
+function generateHeader() {
+    const html = navbarHTML;
+    navbarElement.innerHTML = html;
 }
 
-customElements.define('header-component', Header);
+generateHeader();
