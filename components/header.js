@@ -2,7 +2,7 @@
 
 const navbarHTML = `
             <a href="./index.html">
-                <img src="./images/CoEntropy-1-01.png" width=40% alt="CoEntropy logo">
+                <img src="./images/CoEntropy-1-01.png" width=30% alt="CoEntropy logo">
             </a>
             <h1>Computer Consulting and Support Services for Sonoma County</h1>
             <nav class="nav-container">

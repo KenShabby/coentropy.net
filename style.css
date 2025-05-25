@@ -45,7 +45,8 @@ form {
 }
 
 h1 {
-    font-size: 1.5em;
+    font-size: 2rem;
+    text-align: center;
     text-decoration: none;
     color: limegreen;
 }
@@ -131,18 +132,15 @@ li:hover {
 }
 
 .nav-container {
-    display: block;
-    width: 80%;
-    margin: auto;
+    display: grid;
+    width: 100%;
+    margin: 0 auto;
     top: 10px;
     bottom: 10px;
 }
 
-nav {
-    z-index: 100;
-}
-
 ul {
+    border: none;
     list-style-type: none;
     margin: auto;
     background-color: #333;
@@ -155,13 +153,11 @@ li {
     float: left;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
-    padding-right: 1em;
-    padding-left: 1em;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
-ul {
-    border: none;
-}
 
 footer {
     text-align: center;
