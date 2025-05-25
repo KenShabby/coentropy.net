@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+main {
+    margin-top: 2rem;
+}
+
 @font-face {
     font-family: 'MesloLGS Nerd Font Mono';
     src: url('MesloLGSNFM-Regular.woff2') format('woff2'),
@@ -25,9 +29,8 @@ body {
     line-height: 1.7;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
     max-width: clamp(65%, 85%, 95%);
-    min-height: 100vh;
     padding: 0px;
 }
 
@@ -90,8 +93,9 @@ a.apt-button {
     background-color: limegreen;
     border: 2px solid #ffd7af;
     color: white;
-    display: inline-block;
-    margin: auto;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
     text-align: center;
     text-decoration: none;
     padding: 14px 25px;
@@ -110,60 +114,35 @@ div {
     margin-right: auto;
 }
 
-main {
-    width: 90%;
-}
-
-blockquote {
-    background-color: #2e2c35;
-    border-left: 4px solid #8d99ae;
-    padding-left: 2em;
-    margin-left: 0;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    padding-right: 0.5em;
-    color: #ddd;
-    font-style: italic;
-}
-
 img {
     max-width: 100%;
     height: auto;
 }
 
-li {
-    list-style-type: none;
-}
-
 li a {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
-    background-color: #111;
-}
-
 li:hover {
     background-color: #111;
 }
 
-nav {
-    display: flex;
-    position: -webkit-sticky;
-    position: sticky;
+.nav-container {
+    display: block;
+    width: 80%;
     margin: auto;
-    height: auto;
-    top: 0;
-    justify-content: space-between;
-    width: auto;
+    top: 10px;
+    bottom: 10px;
+}
+
+nav {
     z-index: 100;
 }
 
-nav ul {
+ul {
     list-style-type: none;
     margin: auto;
     background-color: #333;
@@ -172,7 +151,7 @@ nav ul {
     top: 0;
 }
 
-nav li {
+li {
     float: left;
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
@@ -202,17 +181,6 @@ div.flow {
 
 }
 
-
 div.flow img {
     margin: auto;
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px) {
-    main {
-        width: 100%;
-    }
-
-    body {
-        max-width: 90%;
-    }
 }
