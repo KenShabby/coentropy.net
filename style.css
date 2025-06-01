@@ -110,11 +110,6 @@ code {
     font-family: "Courier New", monospace;
 }
 
-div {
-    margin-left: auto;
-    margin-right: auto;
-}
-
 img {
     max-width: 100%;
     height: auto;
@@ -174,9 +169,26 @@ div.flow {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1 0 auto;
 
 }
 
 div.flow img {
     margin: auto;
+    width: 30%;
+
+}
+
+.comptia-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flow-comptia {
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    gap: 15rem;
+
 }
