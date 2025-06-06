@@ -7,6 +7,19 @@ main {
     margin-top: 2rem;
 }
 
+main#main-service {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+    align-content: center;
+}
+
+main#main-service>div {
+    flex: 1;
+    padding: 1rem;
+    border: 2px solid #ffd7af;
+}
+
 @font-face {
     font-family: 'MesloLGS Nerd Font Mono';
     src: url('MesloLGSNFM-Regular.woff2') format('woff2'),
