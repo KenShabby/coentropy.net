@@ -210,3 +210,70 @@ div.flow img {
     margin: 2rem;
     text-align: center;
 }
+
+/* WhatsApp Style Call Button */
+.call-button-green {
+    background-color: #25D366;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 25px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(37, 211, 102, 0.3);
+}
+
+.call-button-green:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
+
+.call-button-green.centered,
+.call-button-large.centered {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+.phone-icon {
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+/* Large version for hero sections */
+.call-button-large {
+    background-color: #25D366;
+    color: white;
+    padding: 18px 36px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+    min-width: 200px;
+}
+
+.call-button-large:hover {
+    background-color: #1ebe57;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+
+    .call-button-green,
+    .call-button-large {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
