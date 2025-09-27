@@ -29,24 +29,28 @@
   </head>
   <body>
     <header></header>
-    <main>
-      <form id="contact" action="https://formspree.io/f/manogknn" method="POST" target="_self" autocomplete="on">
-        <fieldset>
-          <legend>Contact us:</legend>
-          <label for="fname">First name:</label><br>
-          <input type="text" id="fname" name="fname" placeholder="First"><br>
-          <label for="lname">Last name:</label><br>
-          <input type="text" id="lname" name="lname" placeholder="Last"><br>
-          <label for="email">Enter your email:</label><br>
-          <input type="email" id="email" name="email" placeholder="email" re><br>
-          <label for="phone">Phone number (optional):</label><br>
-          <input type="tel" id="phone" name="phone" placeholder="(###) ###-####"><br>
-          <label for="problem">Tell us a bit about your issue:</label><br>
-          <textarea name="problem" rows="15" cols="50" placeholder="Tales of woe"></textarea><br>
-          <input type="submit" value="Submit">
-        </fieldset>
-      </form>
-    </main>
+    <div id="whatscontainer">
+      <a aria-label="Chat on WhatsApp" href="https://wa.me/17074862481">
+        <img id="whatsapp" alt="Chat on WhatsApp" src="./images/whats_app.png">
+      </a>
+    </div>
+    <p>Or send an email request (it is monitored):</p>
+    <form id="contact" action="https://formspree.io/f/manogknn" method="POST" target="_self" autocomplete="on">
+      <fieldset>
+        <legend>Contact us:</legend>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="First"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Last"><br>
+        <label for="email">Enter your email:</label><br>
+        <input type="email" id="email" name="email" placeholder="email" re><br>
+        <label for="phone">Phone number (optional):</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="(###) ###-####"><br>
+        <label for="problem">Tell us a bit about your issue:</label><br>
+        <textarea name="problem" rows="15" cols="50" placeholder="Tales of woe"></textarea><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
     <footer></footer>
   </body>
 </html>
