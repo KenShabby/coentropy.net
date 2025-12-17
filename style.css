@@ -267,6 +267,10 @@ div.flow img {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
+.centered {
+    text-align: center;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
 
