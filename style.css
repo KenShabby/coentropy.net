@@ -21,9 +21,8 @@ main#main-service>div {
 }
 
 @font-face {
-    font-family: 'Gordita-Black';
-/*    src: url('MesloLGSNFM-Regular.woff2') format('woff2'),
-        url('MesloLGSNFM-Regular.woff') format('woff');*/
+    font-family: 'JetBrainsMono-VariableFont_wght';
+    src: url('JetBrainsMono-VariableFont_wght.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -38,7 +37,7 @@ body {
     box-sizing: border-box;
     display: grid;
     color: #ffd7af;
-    font-family: "Gordita-Black", "Garamond", serif;
+    font-family: "JetBrainsMono-VariableFont_wght", "Garamond", serif;
     line-height: 1.7;
     margin-left: auto;
     margin-right: auto;
