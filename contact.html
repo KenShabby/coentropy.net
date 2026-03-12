@@ -5,52 +5,114 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-S4JCNMGZWN"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-    function gtag() {dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-S4JCNMGZWN');
+      function gtag() {dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-S4JCNMGZWN');
     </script>
     <meta charset="utf-8">
-    <meta name="description" content="Computer
-    support, installation, configuration, and programming in Sonoma County.
-    House-calls.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.coentropy.net">
-    <meta property="og:title" content="CoEntropy.net Tech Support for Santa Rosa and Sonoma County">
-    <meta property="og:description" content="Computer support, installation, configuration, and programming in Santa Rosa and Sonoma County.">
-    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/5dda215b-800c-4832-8fa4-38e52d925b79.jpg?token=5TN5YdLVzSCMiSNB6sPI42gCS85TIasEfmgsXJzAYcE&height=794&width=1200&expires=33284992727">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Brendan Coen">
-    <meta name="robots" content="all">
-    <title>CoEntropy -
-    Computer Consulting for Sonoma County</title>
+    <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="canonical" href="https://www.coentropy.net/contact.html">
     <link href="./style.css" rel="stylesheet">
     <script src="./components/header.js" type="text/javascript" defer></script>
     <script src="./components/footer.js" type="text/javascript" defer></script>
+
+    <!-- Primary Meta Tags -->
+    <title>Contact Us | IT Support Santa Rosa &amp; Sonoma County | CoEntropy.net</title>
+    <meta name="description" content="Contact CoEntropy.net for computer repair and IT support in Santa Rosa and Sonoma County. Call (707) 595-0805, WhatsApp, or send a message and we'll get back to you promptly.">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.coentropy.net/contact.html">
+    <meta property="og:title" content="Contact CoEntropy.net | IT Support Santa Rosa">
+    <meta property="og:description" content="Get in touch for computer repair and IT support in Santa Rosa and Sonoma County. Call, WhatsApp, or send a message.">
+    <meta property="og:image" content="https://opengraph.b-cdn.net/production/images/5dda215b-800c-4832-8fa4-38e52d925b79.jpg?token=5TN5YdLVzSCMiSNB6sPI42gCS85TIasEfmgsXJzAYcE&height=794&width=1200&expires=33284992727">
   </head>
   <body>
     <header></header>
-    <div id="whatscontainer">
-      <a aria-label="Chat on WhatsApp" href="https://wa.me/17074862481">
-        <img id="whatsapp" alt="Chat on WhatsApp" src="./images/whats_app.png">
-      </a>
-    </div>
-    <p>Or send an email request (it is monitored):</p>
-    <form id="contact" action="https://formspree.io/f/manogknn" method="POST" target="_self" autocomplete="on">
-      <fieldset>
-        <legend>Contact us:</legend>
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" placeholder="First"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" placeholder="Last"><br>
-        <label for="email">Enter your email:</label><br>
-        <input type="email" id="email" name="email" placeholder="email" re><br>
-        <label for="phone">Phone number (optional):</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="(###) ###-####"><br>
-        <label for="problem">Tell us a bit about your issue:</label><br>
-        <textarea name="problem" rows="15" cols="50" placeholder="Tales of woe"></textarea><br>
-        <input type="submit" value="Submit">
-      </fieldset>
-    </form>
+    <main>
+
+        <h1>Contact Us</h1>
+        <p>Reach out however works best for you. Quick phone consultations are always
+        free — just describe your problem and we'll let you know how we can help.</p>
+
+        <!-- Contact Methods -->
+        <div class="contact-methods-grid">
+
+            <a href="tel:+17075950805" class="contact-method-card contact-method-primary">
+                <span class="contact-method-icon">📞</span>
+                <h3>Call Us</h3>
+                <p>(707) 595-0805</p>
+                <span class="contact-method-note">Fastest response</span>
+            </a>
+
+            <a href="mailto:brendan@coentropy.net" class="contact-method-card">
+                <span class="contact-method-icon">📧</span>
+                <h3>Email</h3>
+                <p>brendan@coentropy.net</p>
+                <span class="contact-method-note">Monitored daily</span>
+            </a>
+
+            <a href="https://wa.me/17074862481" class="contact-method-card contact-method-whatsapp">
+                <span class="contact-method-icon">💬</span>
+                <h3>WhatsApp</h3>
+                <p>+1 (707) 486-2481</p>
+                <span class="contact-method-note">Message or voice call</span>
+            </a>
+
+        </div>
+
+        <!-- Hours reminder -->
+        <div class="contact-hours-bar">
+            <span>🕘 Normal hours: <strong>Monday – Friday, 9:00 am – 5:00 pm</strong></span>
+            <span>After-hours available by arrangement · <a href="pricing.html">See pricing</a></span>
+        </div>
+
+        <!-- Contact Form -->
+        <h2>Send a Message</h2>
+        <p>Prefer to write it out? Fill in the form below and we'll get back to you
+        within one business day.</p>
+
+        <form id="contact" class="contact-form" action="https://formspree.io/f/manogknn" method="POST" target="_self" autocomplete="on">
+            <fieldset class="contact-fieldset">
+                <legend>Your Details</legend>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" placeholder="First" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Last">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="form-optional">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone" placeholder="(707) 555-1234">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="problem">Describe Your Issue</label>
+                    <textarea id="problem" name="problem" rows="8"
+                        placeholder="Tell us what's going on — as much or as little detail as you have. No tech jargon required."></textarea>
+                </div>
+
+                <button type="submit" class="form-submit">Send Message</button>
+
+            </fieldset>
+        </form>
+
+    </main>
     <footer></footer>
   </body>
 </html>
