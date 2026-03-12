@@ -981,6 +981,150 @@ a.apt-button:hover {
     margin-top: 1.5rem;
 }
 
+/* Header Component */
+.header-inner {
+    padding: 1rem 0 0 0;
+}
+
+.header-logo-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.header-logo-link img {
+    max-width: 220px;
+    height: auto;
+}
+
+.header-tagline {
+    text-align: center;
+    font-size: 1.1rem;
+    color: limegreen;
+    margin: 0.3rem 0 1rem 0;
+    opacity: 0.85;
+}
+
+/* Footer Component */
+footer {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(50, 205, 50, 0.25);
+    padding-top: 2rem;
+}
+
+.footer-inner {
+    width: 100%;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-heading {
+    color: limegreen;
+    font-size: 0.95rem;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    opacity: 0.9;
+}
+
+.footer-tagline {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-service-area {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin: 0 0 0.5rem 0;
+}
+
+.footer-hours {
+    font-size: 0.8rem;
+    opacity: 0.6;
+    margin: 0.5rem 0 0 0;
+    line-height: 1.6;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.footer-list li {
+    float: none;
+    border: none;
+    padding: 0;
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+.footer-list li:hover {
+    background: none;
+    opacity: 1;
+}
+
+.footer-list a {
+    color: #ffd7af;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+    color: limegreen;
+}
+
+.footer-certs {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.footer-cert-badge {
+    width: 70px;
+    height: auto;
+    opacity: 0.85;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 215, 175, 0.1);
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-bottom a {
+    color: #ffd7af;
+    opacity: 1;
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
 
@@ -1026,6 +1170,20 @@ a.apt-button:hover {
 
     .apt-expect-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .apt-expect-grid {
+        grid-template-columns: 1fr;
     }
 }
 

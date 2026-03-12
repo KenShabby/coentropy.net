@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /components/
-Disallow: /template.html
+Allow: /
+
 Sitemap: https://www.coentropy.net/sitemap.xml
