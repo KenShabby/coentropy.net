@@ -12,7 +12,7 @@ const footerHTML = `
             </style>
             <footer>
                 <hr>
-                <p>All material Copyright © 2025 - CoEntropy</p>
+                <p>All material Copyright © 2026 - CoEntropy</p>
                 <p>Santa Rosa, CA 95407</p>
                 <p><a href="tel:+17075950805">(707) 595-0805</a></p>
                 <p><a href="../privacy_policy.html">Privacy Policy</a></p>
