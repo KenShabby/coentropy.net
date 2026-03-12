@@ -25,6 +25,7 @@ const footerHTML = `
                     <li>📧 <a href="mailto:brendan@coentropy.net">brendan@coentropy.net</a></li>
                     <li>💬 <a href="https://wa.me/17074862481">WhatsApp</a></li>
                     <li>📅 <a href="./appointment.html">Book a free consultation</a></li>
+                    <li>⭐ <a href="https://share.google/B0WwxtkF9v7sPKDTd" target="_blank" rel="noopener">Review us on Google</a></li>
                 </ul>
                 <p class="footer-hours">Mon – Fri: 9:00 am – 5:00 pm<br>
                 After-hours available by arrangement</p>

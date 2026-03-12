@@ -722,7 +722,7 @@ div.flow img {
 /* Contact Page */
 .contact-methods-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
     margin: 1.5rem 0 1.5rem 0;
 }
@@ -761,6 +761,15 @@ div.flow img {
 .contact-method-card.contact-method-whatsapp:hover {
     border-color: #25D366;
     background: rgba(37, 211, 102, 0.1);
+}
+
+.contact-method-card.contact-method-google {
+    border-color: rgba(66, 133, 244, 0.4);
+}
+
+.contact-method-card.contact-method-google:hover {
+    border-color: #4285F4;
+    background: rgba(66, 133, 244, 0.08);
 }
 
 .contact-method-icon {
@@ -1156,7 +1165,7 @@ footer {
     }
 
     .contact-methods-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .form-row {
