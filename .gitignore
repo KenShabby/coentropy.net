@@ -1,2 +1,23 @@
 images/
+# Environment files
+.env
+.env.*
+
+# Private keys and certificates
+*.key
+*-key.pem
+*_private*
+*_secret*
+
+# OS clutter
 .DS_Store
+Thumbs.db
+
+# Editor clutter
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Node modules if you ever add any tooling
+node_modules/
