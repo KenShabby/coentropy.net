@@ -1,0 +1,740 @@
+/*
+Theme Name: CoEntropy
+Theme URI: https://www.coentropy.net
+Author: Brendan Coen
+Author URI: https://www.coentropy.net/about.html
+Description: Custom theme for CoEntropy.net blog, matching the main site aesthetic.
+Version: 1.0
+License: GNU General Public License v2 or later
+Text Domain: coentropy
+*/
+
+/* ── Reset & Root ── */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'JetBrainsMono-VariableFont_wght';
+    src: url('JetBrainsMono-VariableFont_wght.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ── Body & Layout ── */
+body {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
+                url('/images/board2.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #ffd7af;
+    font-family: "JetBrainsMono-VariableFont_wght", "Garamond", serif;
+    font-size: 18px;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+.site-wrapper {
+    max-width: clamp(65%, 85%, 95%);
+    margin: 0 auto 2rem auto;
+}
+
+/* ── Typography ── */
+h1, h2, h3, h4, h5, h6 {
+    color: limegreen;
+    line-height: 1.3;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.7rem; border-bottom: 1px solid rgba(50,205,50,0.3); padding-bottom: 0.3rem; }
+h3 { font-size: 1.3rem; }
+h4, h5, h6 { font-size: 1.1rem; }
+
+p {
+    margin: 1rem 0;
+}
+
+a {
+    color: limegreen;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #f4a261;
+}
+
+strong, b { font-weight: 900; }
+
+code {
+    background-color: #3c3c42;
+    border-radius: 6px;
+    color: #e9c46a;
+    padding: 0.2em 0.5em;
+    font-family: "Courier New", monospace;
+    font-size: 0.9em;
+}
+
+pre {
+    background-color: #3c3c42;
+    border-radius: 6px;
+    color: #e9c46a;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+pre code {
+    background: none;
+    padding: 0;
+}
+
+blockquote {
+    border-left: 3px solid limegreen;
+    margin: 1.5rem 0;
+    padding: 0.5rem 1.2rem;
+    background: rgba(50,205,50,0.04);
+    font-style: italic;
+    opacity: 0.9;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul, ol {
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+li {
+    margin-bottom: 0.3rem;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgba(50,205,50,0.25);
+    margin: 2rem 0;
+}
+
+/* ── Header ── */
+.site-header {
+    padding: 1rem 0 0 0;
+}
+
+.header-logo-link {
+    display: block;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.header-logo-link img {
+    max-width: 220px;
+    height: auto;
+}
+
+.header-tagline {
+    text-align: center;
+    font-size: 1.1rem;
+    color: limegreen;
+    margin: 0.3rem 0 1rem 0;
+    opacity: 0.85;
+}
+
+/* ── Navigation ── */
+.main-nav {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.main-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.main-nav ul li {
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+}
+
+.main-nav ul li a {
+    color: white;
+    display: block;
+    padding: 14px 16px;
+    font-size: 1.5rem;
+    font-family: "JetBrainsMono-VariableFont_wght", "Garamond", serif;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+}
+
+.main-nav ul li:hover {
+    background-color: #111;
+}
+
+.main-nav ul li.current-page a,
+.main-nav ul li.current-menu-item a {
+    color: limegreen;
+}
+
+/* ── Content Layout ── */
+.content-area {
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: 2rem;
+    margin-top: 2rem;
+    align-items: start;
+}
+
+/* ── Main Content ── */
+.site-main {
+    min-width: 0;
+}
+
+/* ── Post / Article ── */
+.post {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(50,205,50,0.2);
+}
+
+.post:last-of-type {
+    border-bottom: none;
+}
+
+.post-header {
+    margin-bottom: 1rem;
+}
+
+.post-title {
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+.post-title a {
+    color: limegreen;
+}
+
+.post-title a:hover {
+    color: #f4a261;
+}
+
+.post-meta {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}
+
+.post-meta span {
+    margin-right: 1rem;
+}
+
+.post-meta a {
+    color: #ffd7af;
+    opacity: 0.8;
+}
+
+.post-thumbnail {
+    margin-bottom: 1rem;
+}
+
+.post-thumbnail img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid rgba(50,205,50,0.3);
+}
+
+.post-content {
+    margin-bottom: 1rem;
+}
+
+.post-excerpt p {
+    margin-top: 0;
+}
+
+.read-more-link {
+    display: inline-block;
+    color: limegreen;
+    border: 1px solid rgba(50,205,50,0.5);
+    border-radius: 4px;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    margin-top: 0.5rem;
+}
+
+.read-more-link:hover {
+    background: rgba(50,205,50,0.1);
+    color: limegreen;
+    border-color: limegreen;
+}
+
+/* ── Single Post ── */
+.single-post-header {
+    margin-bottom: 1.5rem;
+}
+
+.single-post-title {
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.post-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(50,205,50,0.2);
+    font-size: 0.9rem;
+    opacity: 0.75;
+}
+
+.post-tags a,
+.post-categories a {
+    color: #ffd7af;
+    border: 1px solid rgba(255,215,175,0.3);
+    border-radius: 12px;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.8rem;
+    margin-right: 0.3rem;
+    transition: all 0.2s ease;
+}
+
+.post-tags a:hover,
+.post-categories a:hover {
+    border-color: limegreen;
+    color: limegreen;
+}
+
+/* ── Post Navigation ── */
+.post-navigation {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(50,205,50,0.2);
+}
+
+.nav-previous,
+.nav-next {
+    flex: 1;
+}
+
+.nav-next {
+    text-align: right;
+}
+
+.post-navigation a {
+    font-size: 0.9rem;
+    color: #ffd7af;
+    opacity: 0.8;
+}
+
+.post-navigation a:hover {
+    color: limegreen;
+    opacity: 1;
+}
+
+.post-navigation .nav-label {
+    display: block;
+    font-size: 0.75rem;
+    opacity: 0.5;
+    margin-bottom: 0.2rem;
+}
+
+/* ── Pagination ── */
+.pagination {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.pagination .page-numbers {
+    border: 1px solid rgba(50,205,50,0.4);
+    border-radius: 4px;
+    padding: 0.4rem 0.8rem;
+    color: #ffd7af;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+}
+
+.pagination .page-numbers:hover,
+.pagination .page-numbers.current {
+    background: rgba(50,205,50,0.15);
+    border-color: limegreen;
+    color: limegreen;
+}
+
+/* ── Sidebar ── */
+.sidebar {
+    position: sticky;
+    top: 1rem;
+}
+
+.widget {
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    border: 1px solid rgba(50,205,50,0.25);
+    border-radius: 8px;
+    background: rgba(50,205,50,0.03);
+}
+
+.widget-title {
+    font-size: 1rem;
+    color: limegreen;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-bottom: 1px solid rgba(50,205,50,0.2);
+    padding-bottom: 0.5rem;
+}
+
+.widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.widget ul li {
+    padding: 0.3rem 0;
+    border-bottom: 1px solid rgba(255,215,175,0.08);
+    font-size: 0.9rem;
+}
+
+.widget ul li:last-child {
+    border-bottom: none;
+}
+
+.widget ul li a {
+    color: #ffd7af;
+    opacity: 0.85;
+}
+
+.widget ul li a:hover {
+    color: limegreen;
+    opacity: 1;
+}
+
+/* ── Comments ── */
+.comments-area {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(50,205,50,0.2);
+}
+
+.comments-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2rem 0;
+}
+
+.comment {
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.2rem;
+    border: 1px solid rgba(255,215,175,0.15);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.02);
+}
+
+.comment-meta {
+    font-size: 0.85rem;
+    opacity: 0.6;
+    margin-bottom: 0.5rem;
+}
+
+.comment-author {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.comment-content p {
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+.reply a {
+    font-size: 0.8rem;
+    color: #ffd7af;
+    opacity: 0.6;
+    border: 1px solid rgba(255,215,175,0.2);
+    border-radius: 4px;
+    padding: 0.1rem 0.5rem;
+    margin-top: 0.5rem;
+    display: inline-block;
+}
+
+.reply a:hover {
+    opacity: 1;
+    color: limegreen;
+    border-color: limegreen;
+}
+
+/* Comment children (nested replies) */
+.children {
+    list-style: none;
+    padding-left: 2rem;
+    margin-top: 1rem;
+}
+
+/* ── Comment Form ── */
+.comment-respond {
+    margin-top: 2rem;
+}
+
+.comment-reply-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.comment-form label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+    opacity: 0.85;
+}
+
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form input[type="url"],
+.comment-form textarea {
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(50,205,50,0.35);
+    border-radius: 6px;
+    color: #ffd7af;
+    font-family: "JetBrainsMono-VariableFont_wght", "Garamond", serif;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.2s ease;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+    border-color: limegreen;
+    outline: none;
+}
+
+.comment-form input::placeholder,
+.comment-form textarea::placeholder {
+    opacity: 0.4;
+}
+
+.comment-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.comment-form input[type="submit"],
+.form-submit input {
+    background-color: limegreen;
+    border: none;
+    border-radius: 25px;
+    color: #111;
+    cursor: pointer;
+    font-family: "JetBrainsMono-VariableFont_wght", "Garamond", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.7rem 2rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.comment-form input[type="submit"]:hover,
+.form-submit input:hover {
+    background-color: #1ebe57;
+    transform: translateY(-2px);
+}
+
+/* ── Footer ── */
+.site-footer {
+    margin-top: 3rem;
+    border-top: 1px solid rgba(50,205,50,0.25);
+    padding-top: 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footer-heading {
+    color: limegreen;
+    font-size: 0.95rem;
+    margin: 0 0 0.5rem 0;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-list li {
+    font-size: 0.95rem;
+    opacity: 0.8;
+    margin: 0;
+}
+
+.footer-list a {
+    color: #ffd7af;
+    transition: color 0.2s ease;
+}
+
+.footer-list a:hover {
+    color: limegreen;
+}
+
+.footer-tagline,
+.footer-service-area,
+.footer-hours {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.footer-hours {
+    margin-top: 0.5rem;
+    opacity: 0.6;
+}
+
+.footer-certs {
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+}
+
+.footer-cert-badge {
+    width: 70px;
+    height: auto;
+    opacity: 0.85;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,215,175,0.1);
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.8rem;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.footer-bottom a {
+    color: #ffd7af;
+}
+
+/* ── No Results ── */
+.no-results {
+    padding: 2rem;
+    text-align: center;
+    border: 1px solid rgba(50,205,50,0.2);
+    border-radius: 8px;
+}
+
+/* ── Search Form ── */
+.search-form {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.search-field {
+    flex: 1;
+    background: rgba(0,0,0,0.4);
+    border: 1px solid rgba(50,205,50,0.35);
+    border-radius: 6px;
+    color: #ffd7af;
+    font-family: "JetBrainsMono-VariableFont_wght", "Garamond", serif;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;
+}
+
+.search-field:focus {
+    border-color: limegreen;
+    outline: none;
+}
+
+.search-submit {
+    background-color: limegreen;
+    border: none;
+    border-radius: 6px;
+    color: #111;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.search-submit:hover {
+    background-color: #1ebe57;
+}
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+    .content-area {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: static;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .post-navigation {
+        flex-direction: column;
+    }
+
+    .nav-next {
+        text-align: left;
+    }
+}
