@@ -510,6 +510,15 @@ div.flow img {
     background: none;
 }
 
+.contact-method-card.contact-method-ticket {
+    border-color: rgba(50, 205, 50, 0.5);
+}
+
+.contact-method-card.contact-method-ticket:hover {
+    border-color: limegreen;
+    background: rgba(50, 205, 50, 0.1);
+}
+
 /* Pricing Page */
 .pricing-grid {
     display: grid;
@@ -730,7 +739,7 @@ div.flow img {
 /* Contact Page */
 .contact-methods-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
     margin: 1.5rem 0 1.5rem 0;
 }
@@ -1230,3 +1239,74 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Support Portal Section */
+.support-portal-section {
+    text-align: center;
+    margin: 2.5rem 0;
+    padding: 2rem;
+    border: 1px solid rgba(50, 205, 50, 0.4);
+    border-radius: 8px;
+    background: rgba(50, 205, 50, 0.06);
+}
+
+.support-portal-section h2 {
+    border-bottom: none;
+    margin-top: 0;
+}
+
+.support-portal-section p {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+    opacity: 0.9;
+}
+
+.support-portal-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.support-button-primary {
+    background-color: limegreen;
+    color: #111;
+    padding: 14px 28px;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.support-button-primary:hover {
+    background-color: #1ebe57;
+    color: #111;
+    transform: translateY(-2px);
+}
+
+.support-button-secondary {
+    background-color: transparent;
+    color: limegreen;
+    padding: 14px 28px;
+    border-radius: 25px;
+    border: 2px solid limegreen;
+    font-weight: 700;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.2s ease, transform 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.support-button-secondary:hover {
+    background-color: rgba(50, 205, 50, 0.1);
+    color: limegreen;
+    transform: translateY(-2px);
+}
+
