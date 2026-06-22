@@ -32,7 +32,7 @@
             <div class="footer-col">
                 <h4 class="footer-heading">Services</h4>
                 <ul class="footer-list">
-                    <li><a href="https://www.coentropy.net/services.html">Computer Repair &amp; Setup</a></li>
+                    <li><a href="https://www.coentropy.net/services.html">Computer Service &amp; Setup</a></li>
                     <li><a href="https://www.coentropy.net/services.html">Network Setup &amp; Troubleshooting</a></li>
                     <li><a href="https://www.coentropy.net/services.html">Virus &amp; Malware Removal</a></li>
                     <li><a href="https://www.coentropy.net/services.html">Data Backup &amp; Recovery</a></li>
